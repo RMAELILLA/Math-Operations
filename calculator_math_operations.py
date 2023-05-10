@@ -5,39 +5,40 @@ math_operator = math_operator.lower()
 # ask for 2 numbers
 first_number = int(input("Please enter 'First Number': "))
 second_number = int(input("Please enter 'Second 'Number': "))
-for i in range(len(math_operator)):
-    # if input is "Addition"
-    if math_operator == "addition":
+# if input is "Addition"
+if math_operator == "addition":
+    # calculate
+    addition = first_number + second_number
+    # display result
+    print("The sum is: ", addition)
+# if input is "Subtraction"
+elif math_operator == "subtraction":
+    # calculate
+    subtraction = first_number - second_number
+    # display result
+    print("The difference is: ", subtraction)
+# if input is "Multiplication"
+elif math_operator == "multiplication":
+    # calculate
+    multiplication = first_number * second_number
+    # display result
+    print("The product is: ", multiplication)
+# if input is "Division"
+elif math_operator == "division":
+    try:
         # calculate
-        addition = first_number + second_number
-        # display result
-        print("The sum is: ", addition)
-    # if input is "Subtraction"
-    elif math_operator == "subtraction":
-        # calculate
-        subtraction = first_number - second_number
-        # display result
-        print("The difference is: ", subtraction)
-    # if input is "Multiplication"
-    elif math_operator == "multiplication":
-        # calculate
-        multiplication = first_number * second_number
-        # display result
-        print("The product is: ", multiplication)
-    # if input is "Division"
-    elif math_operator == "division":
-        try:
-            # calculate
-            division = first_number // second_number
-            # display result
-            print("The quotient is: ", division)
-        except ZeroDivisionError:
-            print("Cannot process division, your divisor is zero")
-    # else
+        division = first_number // second_number
+    except ZeroDivisionError:
+        print("Cannot process division, your divisor is zero")
+    # display result
     else:
-        print("I don't understant your input, please choose one only in the four math operators.")
+        print("The quotient is: ", division)
+# else
+else:
+    print("I don't understant your input, please choose one only in the four math operators.")
 
 # ----------------------------------------------
+print("-" * 120)
 # ask user if wants to input again
 # if yes repeat step 1
 # if no
