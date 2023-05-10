@@ -51,7 +51,7 @@ for i in range(len(math_operator)):
         print("I don't understant your input, please choose one only in the four math operators.")
 
 # ----------------------------------------------
-
+print("-" * 120)
 # ask user if wants to input again
     # if yes
     # if no
