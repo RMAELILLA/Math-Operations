@@ -40,6 +40,7 @@ else:
 # ----------------------------------------------
 print("-" * 120)
 # ask user if wants to input again
+input("Do you want to calculate again? y/n: ")
 # if yes repeat step 1
 # if no
    # display appreciation
