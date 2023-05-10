@@ -34,9 +34,9 @@ for i in range(len(math_operator)):
         division_number1 = int(input("Please enter 'First Number': "))
         division_number2 = int(input("Please enter 'Second 'Number': "))
         # calculate
-        division = division_number1 * division_number2
+        division = division_number1 / division_number2
         # display result
-        print("The product is: ", division)
+        print("The quotient is: ", division)
     # else
     else:
         print("I don't understant your input, please choose one only in the four math operators.")
