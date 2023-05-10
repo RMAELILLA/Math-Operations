@@ -13,14 +13,23 @@ for i in range(len(math_operator)):
         # display result
         print("The sum is: ", addition)
     # if input is "Subtraction"
+    elif math_operator == "subtraction":
         # ask for 2 numbers
+        subtraction_number1 = int(input("Please enter 'First Number': "))
+        subtraction_number2 = int(input("Please enter 'Second 'Number': "))
+        # calculate
         # display result
     # if input is "Multiplication"
-            # ask for 2 numbers
+        # ask for 2 numbers
+        # calculate
         # display result
     # if input is "Division"
         # ask for 2 numbers
+        # calculate
         # display result
+    # else
+    else:
+        print("I don't understant your input, please choose one only in the four math operators.")
 # ----------------------------------------------
 # ask user if wants to input again
     # if yes
