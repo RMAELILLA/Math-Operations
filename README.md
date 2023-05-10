@@ -1,8 +1,16 @@
 # Math Operations
-
+Let user choose which operation they would like to choose either Addition, Subtraction, Multiplication, or Division.
 
 # ❓ How to run this program:
-
+- open the folder/file with any coding platform that can read python
+- After opening the program, run the program and it should let the user input their choosen operator
+- Once they choose their operator it should directly go to designated operator
+- Ask user for 2 numbers
+- Calculate the input 2 numbers base on the choosen operator
+- Display the result
+- After calculating and displaying answers it should ask user if they want to operate again
+- if yes repeat the step
+- if no display appreciation
 
 # :heart: Contributor
 ![image](https://user-images.githubusercontent.com/129654335/234447504-b897eec1-0a8b-4350-a11f-6efdf0357b81.png)
