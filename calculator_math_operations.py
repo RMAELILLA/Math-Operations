@@ -36,7 +36,7 @@ for i in range(len(math_operator)):
         # calculate
         division = division_number1 * division_number2
         # display result
-        print("The product is: ", multiplication)
+        print("The product is: ", division)
     # else
     else:
         print("I don't understant your input, please choose one only in the four math operators.")
