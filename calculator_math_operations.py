@@ -53,6 +53,7 @@ for i in range(len(math_operator)):
 # ----------------------------------------------
 print("-" * 120)
 # ask user if wants to input again
+input("Do you want to calculate again? y/n: ")
     # if yes
     # if no
        # display appreciation
