@@ -3,6 +3,7 @@ math_operator = input("Good day! Please choose what math operation you need; 'Ad
 # evaluate the chosen math operations
 for i in range(len(math_operator)):
     # if input is "Addition"
+    math_operator = math_operator.lower()
     if math_operator == "addition":
         # ask for 2 numbers
         input("Please enter 'First Number': ")
