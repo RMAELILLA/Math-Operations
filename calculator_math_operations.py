@@ -49,11 +49,3 @@ for i in range(len(math_operator)):
     # else
     else:
         print("I don't understant your input, please choose one only in the four math operators.")
-
-# ----------------------------------------------
-print("-" * 120)
-# ask user if wants to input again
-math_operator_2 = input("Do you want to calculate again? y/n: ")
-    # if yes
-    # if no
-       # display appreciation
