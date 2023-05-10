@@ -5,7 +5,7 @@ math_operator = math_operator.lower()
 # ask for 2 numbers
 first_number = int(input("Please enter 'First Number': "))
 second_number = int(input("Please enter 'Second 'Number': "))
-for i in range(math_operator):
+for i in range(len(math_operator)):
     # if input is "Addition"
     if math_operator == "addition":
         # calculate
@@ -15,20 +15,20 @@ for i in range(math_operator):
     # if input is "Subtraction"
     elif math_operator == "subtraction":
         # calculate
-        subtraction = subtraction_number1 - subtraction_number2
+        subtraction = first_number - second_number
         # display result
         print("The difference is: ", subtraction)
     # if input is "Multiplication"
     elif math_operator == "multiplication":
         # calculate
-        multiplication = multiplication_number1 * multiplication_number2
+        multiplication = first_number * second_number
         # display result
         print("The product is: ", multiplication)
     # if input is "Division"
     elif math_operator == "division":
         try:
             # calculate
-            division = division_number1 // division_number2
+            division = first_number // second_number
             # display result
             print("The quotient is: ", division)
         except ZeroDivisionError:
