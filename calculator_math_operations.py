@@ -1,9 +1,9 @@
 # ask user to choose math operations between "Addition", "Subtraction", "Multiplication", or "Division"
-math_operator = input("Good day! Please choose what math operation you need; 'Addition', 'Subtraction', 'Multiplication' or 'Division': ")
+math_operator = input("Good day! Please choose what math operation you need: 'Addition', 'Subtraction', 'Multiplication' or 'Division': ")
 # evaluate the chosen math operations
+math_operator = math_operator.lower()
 for i in range(len(math_operator)):
     # if input is "Addition"
-    math_operator = math_operator.lower()
     if math_operator == "addition":
         # ask for 2 numbers
         addition_number1 = int(input("Please enter 'First Number': "))
@@ -43,7 +43,9 @@ for i in range(len(math_operator)):
     # else
     else:
         print("I don't understant your input, please choose one only in the four math operators.")
+
 # ----------------------------------------------
+print("-", *120)
 # ask user if wants to input again
     # if yes
     # if no
