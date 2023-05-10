@@ -22,9 +22,13 @@ for i in range(len(math_operator)):
         # display result
         print("The difference is: ", subtraction)
     # if input is "Multiplication"
-        # ask for 2 numbers
+    elif math_operator == "multiplication":
+        multiplication_number1 = int(input("Please enter 'First Number': "))
+        multiplication_number2 = int(input("Please enter 'Second 'Number': "))
         # calculate
+        multiplication = subtraction_number1 * subtraction_number2
         # display result
+        print("The product is: ", multiplication)
     # if input is "Division"
         # ask for 2 numbers
         # calculate
