@@ -1,10 +1,19 @@
 # ask user to choose math operations between "Addition", "Subtraction", "Multiplication", or "Division"
-# if addition
-    # then ask for 2 number
-    # display result
-# if subtraction
-    # then ask for 2 number
-# if multiplication
-    # then ask for 2 number
-# if division
-    # then ask for 2 number
+# evaluate the chosen math operations
+    # if input is "Addition"
+        # ask for 2 numbers
+        # display result
+    # if input is "Subtraction"
+        # ask for 2 numbers
+        # display result
+    # if input is "Multiplication"
+        # ask for 2 numbers
+        # display result
+    # if input is "Division"
+        # ask for 2 numbers
+        # display result
+# ----------------------------------------------
+# ask user if wants to input again
+    # if yes
+    # if no
+        # display appreciation
