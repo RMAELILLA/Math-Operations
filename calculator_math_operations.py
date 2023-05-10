@@ -1,5 +1,5 @@
 # ask user to choose math operations between "Addition", "Subtraction", "Multiplication", or "Division"
-input("Good day! Please choose what math operation you need; 'Addition', 'Subtraction', 'Multiplication' or 'Division'")
+math_operator = input("Good day! Please choose what math operation you need; 'Addition', 'Subtraction', 'Multiplication' or 'Division'")
 for i in range(len(math_operator)):
     # evaluate the chosen math operations
     # if input is "Addition"
