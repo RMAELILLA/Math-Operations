@@ -3,7 +3,7 @@ math_operator = input("Good day! Please choose what math operation you need: 'Ad
 # evaluate the chosen math operations
 math_operator = math_operator.lower()
 for i in range(len(math_operator)):
-    
+
     # if input is "Addition"
     if math_operator == "addition":
         # ask for 2 numbers
@@ -13,6 +13,7 @@ for i in range(len(math_operator)):
         addition = addition_number1 + addition_number2
         # display result
         print("The sum is: ", addition)
+        break
     # if input is "Subtraction"
     elif math_operator == "subtraction":
         # ask for 2 numbers
@@ -46,7 +47,6 @@ for i in range(len(math_operator)):
         print("I don't understant your input, please choose one only in the four math operators.")
 
 # ----------------------------------------------
-print("-", *120)
 # ask user if wants to input again
     # if yes
     # if no
