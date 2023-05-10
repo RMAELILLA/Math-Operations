@@ -26,13 +26,17 @@ for i in range(len(math_operator)):
         multiplication_number1 = int(input("Please enter 'First Number': "))
         multiplication_number2 = int(input("Please enter 'Second 'Number': "))
         # calculate
-        multiplication = subtraction_number1 * subtraction_number2
+        multiplication = multiplication_number1 * multiplication_number2
         # display result
         print("The product is: ", multiplication)
     # if input is "Division"
-        # ask for 2 numbers
+    elif math_operator == "division":
+        division_number1 = int(input("Please enter 'First Number': "))
+        division_number2 = int(input("Please enter 'Second 'Number': "))
         # calculate
+        division = division_number1 * division_number2
         # display result
+        print("The product is: ", multiplication)
     # else
     else:
         print("I don't understant your input, please choose one only in the four math operators.")
