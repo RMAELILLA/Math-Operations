@@ -8,6 +8,7 @@ for i in range(len(math_operator)):
         # ask for 2 numbers
         addition_number1 = input("Please enter 'First Number': ")
         addition_number2 = input("Please enter 'Second 'Number': ")
+        # calculate
         # display result
     # if input is "Subtraction"
         # ask for 2 numbers
