@@ -6,7 +6,8 @@ for i in range(len(math_operator)):
     math_operator = math_operator.lower()
     if math_operator == "addition":
         # ask for 2 numbers
-        addition_1st_number = input("Please enter 'First Number': ")
+        addition_number1 = input("Please enter 'First Number': ")
+        addition_number2 = input("Please enter 'Second 'Number': ")
         # display result
     # if input is "Subtraction"
         # ask for 2 numbers
