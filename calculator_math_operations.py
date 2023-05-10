@@ -23,6 +23,7 @@ for i in range(len(math_operator)):
         subtraction = subtraction_number1 - subtraction_number2
         # display result
         print("The difference is: ", subtraction)
+        break
     # if input is "Multiplication"
     elif math_operator == "multiplication":
         multiplication_number1 = int(input("Please enter 'First Number': "))
@@ -31,6 +32,7 @@ for i in range(len(math_operator)):
         multiplication = multiplication_number1 * multiplication_number2
         # display result
         print("The product is: ", multiplication)
+        break
     # if input is "Division"
     elif math_operator == "division":
         try:
@@ -40,13 +42,16 @@ for i in range(len(math_operator)):
             division = division_number1 // division_number2
             # display result
             print("The quotient is: ", division)
+            break
         except ZeroDivisionError:
             print("Cannot process division, your divisor is zero")
+            break
     # else
     else:
         print("I don't understant your input, please choose one only in the four math operators.")
 
 # ----------------------------------------------
+
 # ask user if wants to input again
     # if yes
     # if no
