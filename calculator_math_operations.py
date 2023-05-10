@@ -9,7 +9,9 @@ for i in range(len(math_operator)):
         addition_number1 = input("Please enter 'First Number': ")
         addition_number2 = input("Please enter 'Second 'Number': ")
         # calculate
+        addition = addition_number1 + addition_number2
         # display result
+        print("The sum is: ", addition)
     # if input is "Subtraction"
         # ask for 2 numbers
         # display result
