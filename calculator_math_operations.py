@@ -1,5 +1,5 @@
 # ask user to choose math operations between "Addition", "Subtraction", "Multiplication", or "Division"
-math_operator = input("Good day! Please choose what math operation you need; 'Addition', 'Subtraction', 'Multiplication' or 'Division'")
+math_operator = input("Good day! Please choose what math operation you need; 'Addition', 'Subtraction', 'Multiplication' or 'Division': ")
 # evaluate the chosen math operations
 for i in range(len(math_operator)):
     # if input is "Addition"
@@ -18,7 +18,9 @@ for i in range(len(math_operator)):
         subtraction_number1 = int(input("Please enter 'First Number': "))
         subtraction_number2 = int(input("Please enter 'Second 'Number': "))
         # calculate
+        subtraction = subtraction_number1 - subtraction_number2
         # display result
+        print("The difference is: ", subtraction)
     # if input is "Multiplication"
         # ask for 2 numbers
         # calculate
