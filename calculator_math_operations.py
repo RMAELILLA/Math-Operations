@@ -31,12 +31,15 @@ for i in range(len(math_operator)):
         print("The product is: ", multiplication)
     # if input is "Division"
     elif math_operator == "division":
-        division_number1 = int(input("Please enter 'First Number': "))
-        division_number2 = int(input("Please enter 'Second 'Number': "))
-        # calculate
-        division = division_number1 / division_number2
-        # display result
-        print("The quotient is: ", division)
+        try:
+            division_number1 = int(input("Please enter 'First Number': "))
+            division_number2 = int(input("Please enter 'Second 'Number': "))
+            # calculate
+            division = division_number1 // division_number2
+            # display result
+            print("The quotient is: ", division)
+        except ZeroDivisionError:
+            print("Cannot process division, your divisor is zero")
     # else
     else:
         print("I don't understant your input, please choose one only in the four math operators.")
