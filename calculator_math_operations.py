@@ -59,5 +59,3 @@ def calculator_math_operations():
 
 # ----------------------------------------------
 calculator_math_operations()
-print("-" * 120)
-print("Thank you for using this program! Have a good day!")
