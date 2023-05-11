@@ -1,3 +1,4 @@
+
 def calculator_math_operations():
     while True:
         # ask user to choose math operations between "Addition", "Subtraction", "Multiplication", or "Division"
@@ -39,12 +40,14 @@ def calculator_math_operations():
         else:
             print("I don't understant your input, please choose one only in the four math operators.")
 
-        # ----------------------------------------------
-        print("-" * 120)
-        # ask user if wants to input again
-        math_operator2 = input("Do you want to calculate again? y/n: ")
-        # if yes repeat step 1
-        if math_operator2 == "y":
-            
-        # if no
-        # display appreciation
+# ----------------------------------------------
+print("-" * 120)
+# ask user if wants to input again
+math_operator2 = input("Do you want to calculate again? y/n: ")
+# if yes repeat step 1
+if math_operator2 == "y":
+    calculator_math_operations()
+else:
+    print("Thank you for using this program! Have a good day!")
+# if no
+# display appreciation
