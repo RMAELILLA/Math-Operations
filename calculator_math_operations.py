@@ -1,13 +1,12 @@
+# ask user to choose math operations between "Addition", "Subtraction", "Multiplication", or "Division"
+math_operator = input("Good day! Please choose what math operation you need: 'Addition', 'Subtraction', 'Multiplication' or 'Division': ")
+# evaluate the chosen math operations
+math_operator = math_operator.lower()
 
 def calculator_math_operations():
     while True:
-        # ask user to choose math operations between "Addition", "Subtraction", "Multiplication", or "Division"
-        math_operator = input("Good day! Please choose what math operation you need: 'Addition', 'Subtraction', 'Multiplication' or 'Division': ")
-        # evaluate the chosen math operations
-        math_operator = math_operator.lower()
-        
-        # if input is "Addition"
-        if math_operator in == ["addition", "subtraction", "multiplication", "division"]:
+        # if input is in math operator
+        if math_operator in ["addition", "subtraction", "multiplication", "division"]:
              # ask for 2 numbers
             first_number = int(input("Please enter 'First Number': "))
             second_number = int(input("Please enter 'Second 'Number': "))
@@ -41,6 +40,7 @@ def calculator_math_operations():
         # else
         else:
             print("I don't understant your input, please choose one only in the four math operators.")
+            print("Field cannot include non-integer or non-numerical values or be blank.")
 
 # ----------------------------------------------
 print("-" * 120)
