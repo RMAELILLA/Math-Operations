@@ -1,10 +1,11 @@
-# ask user to choose math operations between "Addition", "Subtraction", "Multiplication", or "Division"
-math_operator = input("Good day! Please choose what math operation you need: 'Addition', 'Subtraction', 'Multiplication' or 'Division': ")
-# evaluate the chosen math operations
-math_operator = math_operator.lower()
-
+# display start
+print("Good day! This program is a simple calculator.")
 def calculator_math_operations():
     while True:
+        # ask user to choose math operations between "Addition", "Subtraction", "Multiplication", or "Division"
+        math_operator = input("Please choose what math operation you need: 'Addition', 'Subtraction', 'Multiplication' or 'Division': ")
+        # evaluate the chosen math operations
+        math_operator = math_operator.lower()
         # if input is in math operator
         if math_operator in ["addition", "subtraction", "multiplication", "division"]:
              # ask for 2 numbers
@@ -39,17 +40,23 @@ def calculator_math_operations():
                     print("The quotient is: ", division)
         # else
         else:
-            print("I don't understant your input, please choose one only in the four math operators.")
-            print("Field cannot include non-integer or non-numerical values or be blank.")
+            if not type(math_operator) is int:
+                raise Exception("I don't understant your input, please choose one only in the four math operators.")
+            else:
+                raise TypeError("Field cannot include non-integer or non-numerical values or be blank.")
+        
+        # decision statement
+        math_operator_2 = (input("Do you want to calculate again? y/n: "))
+        if math_operator_2 == "y":
+            continue
+        elif math_operator_2 == "n":
+            print("Thank you for using this program. Have a Good day!")
+            break
+        else:
+            print("Please choose y/n only: ")
+            continue
 
 # ----------------------------------------------
+calculator_math_operations()
 print("-" * 120)
-# ask user if wants to input again
-math_operator2 = input("Do you want to calculate again? y/n: ")
-# if yes repeat step 1
-if math_operator2 == "y":
-    calculator_math_operations()
-else:
-    print("Thank you for using this program! Have a good day!")
-# if no
-# display appreciation
+print("Thank you for using this program! Have a good day!")
