@@ -1,4 +1,4 @@
-# display start
+# display start of program
 print("Good day! This program is a simple calculator.")
 def calculator_math_operations():
     while True:
@@ -41,9 +41,8 @@ def calculator_math_operations():
         # else
         else:
             if not type(math_operator) is int:
-                raise Exception("I don't understant your input, please choose one only in the four math operators.")
-            else:
-                raise TypeError("Field cannot include non-integer or non-numerical values or be blank.")
+                print("I don't understant your input, please choose one only in the four math operators.")
+                print("Field cannot include non-integer or non-numerical values or be blank.")
         
         # decision statement
         math_operator_2 = (input("Do you want to calculate again? y/n: "))
