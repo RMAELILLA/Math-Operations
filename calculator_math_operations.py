@@ -49,14 +49,13 @@ def calculator_math_operations():
         
         # decision statement
         math_operator_2 = (input("Do you want to calculate again? y/n: "))
-        if math_operator_2.lower == "y":
+        if math_operator_2 == "y":
             continue
-        elif math_operator_2.lower == "n":
+        elif math_operator_2 == "n":
             print("Thank you for using this program. Have a Good day!")
             break
         else:
-            if not type(math_operator_2) == "y" "n":
-                print("Please choose 'y' only if yes or 'n' only if no")
+            print("Please choose 'y' only if yes or 'n' only if no")
             break
             
 # ----------------------------------------------
