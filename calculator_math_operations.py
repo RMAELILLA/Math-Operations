@@ -43,8 +43,8 @@ def calculator_math_operations():
                 print("Field cannot include non-integer or non-numerical values or be blank.")
         # else
         else:
-            if not type(math_operator) is int:
-                raise TypeError("I don't understant your input, please choose one only in the four math operators.")
+            print("I don't understant your input, please choose one only in the four math operators.")
+            break
         
         # decision statement
         math_operator_2 = (input("Do you want to calculate again? y/n: "))
